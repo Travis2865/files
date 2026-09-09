@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travis Cain — Portfolio</title>
+<link rel="icon" type="image/png" href="assets/gear.png">
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- background grid -->
+<div class="grid-bg" aria-hidden="true"></div>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <a href="#" class="nav__brand">Travis Cain <span>/ Mechanical Engineer</span></a>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav__links" id="navLinks">
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero__inner">
+    <div class="hero__text">
+      <p class="eyebrow">
+         Mechanical Engineering · Arizona State University</p>
+      <h1>Travis <em>Cain</em></h1>
+      <p class="hero__bio">
+        Thanks for checking out my portfolio! Whether you're a recruiter, fellow engineer, friend, or lost stranger, I hope you enjoy the ride.
+      </p>
+      <a href="#experience" class="btn">View Experience ↓</a>
+    </div>
+
+    <div class="hero__portrait">
+      <div class="frame">
+        <img src="assets/imageTSMC.jpg" alt="Travis Cain" onerror="this.src='https://placehold.co/480x600/F1EAD9/7F7665?text=TRAVIS+CAIN'">
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__stats">
+    <div class="stat">
+      <span class="stat__num">2</span>
+      <span class="stat__label">Active Projects</span>
+    </div>
+    <div class="stat">
+      <span class="stat__num">6</span>
+      <span class="stat__label">Past Projects</span>
+    </div>
+    <div class="stat stat--grad">
+      <span class="stat__gradmark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 18 24 9l20 9-20 9Z"/>
+          <path d="M13 22v9c0 2 5 5 11 5s11-3 11-5v-9"/>
+          <path d="M44 18v10"/>
+        </svg>
+      </span>
+      <span class="stat__gradline1">Class of Fall 2027</span>
+      <span class="stat__gradline2">Mechanical Engineering, ASU</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section class="section section--alt section--tight-top" id="experience">
+  <h2 class="section__title section__title--experience center">Experience</h2>
+
+  <div class="exp-timeline" id="expList">
+    <!-- Rows are generated from the experiences[] array in script.js -->
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="section" id="projects">
+  <h2 class="section__title section__title--projects center">Projects &amp; <em>Research</em></h2>
+
+  <div class="project-grid" id="projectGrid">
+    <!-- Project cards are generated from the projects[] array in script.js -->
+    <!-- PLACEHOLDER: edit the projects array in script.js to add your own -->
+  </div>
+
+  <div class="projects-more">
+    <button type="button" class="btn" id="miscBtn">Random Stuff →</button>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="section section--tight-top" id="skills">
+  <h2 class="section__title center">Technical <em>Skills</em></h2>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h3>Simulation &amp; Analysis</h3>
+      <ul>
+        <li>nTopology</li>
+        <li>MATLAB</li>
+        <li>Ansys</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <h3>Programming</h3>
+      <ul>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>NumPy / SciPy / Matplotlib</li>
+        <li>C++</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <h3>CAD &amp; Design</h3>
+      <ul>
+        <li>SOLIDWORKS</li>
+        <li>Design X</li>
+        <li>AutoCAD</li>
+        <li>TViewer</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <h3>Lab &amp; Fabrication</h3>
+      <ul>
+        <li>Sheet Metal Fabrication</li>
+        <li>Additive Manufacturing</li>
+        <li>Laser Cutting</li>
+        <li>P42 Metrology</li>
+        <li>Soldering</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section section--tight-top" id="contact">
+  <h2 class="section__title center">Contact</h2>
+  <p class="contact__blurb">
+    I'm currently seeking a design/hardware/quality/manufacturing engineering role. Please reach out with any inquiries or opportunities!
+  </p>
+
+  <div class="contact__links">
+    <a href="mailto:travgcain@gmail.com" class="contact__link">
+      <span class="contact__icon contact__icon--email" aria-hidden="true">
+        <img src="assets/outlook-transparent.png" alt="">
+      </span>
+      <span>
+        <span class="contact__label">Email</span>
+        <span class="contact__value">travgcain@gmail.com</span>
+      </span>
+    </a>
+    <a href="tel:+16233008894" class="contact__link">
+      <span class="contact__icon contact__icon--phone" aria-hidden="true">
+        <img src="assets/Phone_iOS.png" alt="">
+      </span>
+      <span>
+        <span class="contact__label">Phone</span>
+        <span class="contact__value">+1 (623) 300-8894</span>
+      </span>
+    </a>
+    <a href="https://linkedin.com/in/travis-cain1" class="contact__link" target="_blank" rel="noopener">
+      <span class="contact__icon contact__icon--linkedin" aria-hidden="true">
+        <img src="assets/linkedin-transparent.png" alt="">
+      </span>
+      <span>
+        <span class="contact__label">LinkedIn</span>
+        <span class="contact__value">linkedin.com/in/travis-cain1</span>
+      </span>
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Non-Disclosure Agreement: I will only disclose non-proprietary information regarding my work. All images are public knowledge.</p>
+  <p>Travis Cain · Wittmann, Arizona</p>
+</footer>
+
+<!-- ===== PROJECT MODAL ===== -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal__panel" id="modalPanel">
+    <button class="modal__close" id="modalClose" aria-label="Close">✕ Close</button>
+    <div class="modal__media" id="modalMedia">
+      <img id="modalImg" src="" alt="">
+      <video id="modalVideo" loop muted playsinline hidden></video>
+    </div>
+    <div class="modal__body">
+      <div class="tags" id="modalTags"></div>
+      <h3 id="modalTitle"></h3>
+      <div id="modalDesc"></div>
+      <div class="modal__gallery" id="modalGallery"></div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
