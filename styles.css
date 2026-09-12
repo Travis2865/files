@@ -643,7 +643,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .contact__links {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, 340px);
+  justify-content: center;
   gap: 1.25rem;
 }
 .contact__link {
@@ -673,7 +674,6 @@ ul { margin: 0; padding: 0; list-style: none; }
   width: 44px;
   height: 44px;
 }
-.contact__link:hover .contact__icon--phone img,
 .contact__link:hover .contact__icon--email img {
   filter: brightness(1.15);
   transform: translateY(-3px) scale(1.08);
