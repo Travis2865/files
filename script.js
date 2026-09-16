@@ -273,7 +273,7 @@ const experiences = [
     logoLarge: true,
     side: "right",
     summary: "Ran a DoE to reduce particle counts in packaging tools and supported AMHS hardware installs.",
-    details: "During the summer of 2026, I contributed to the largest global chip supplier, TSMC. I performed a Design of Experiments (DoE) for large-scale data analysis and root cause investigation to minimize particle counts in packaging tools, and assisted with the installation of N2 Charger, N2 OHB, and OHB systems within P2.",
+    details: "During the summer of 2026, I contributed to the largest global chip supplier, TSMC. While the amount I can disclose is very limited, I performed a DoE for root cause analysis for particle counts in packaging tools, supported AMHS hardware installs, built a defect density tool, designed SOPs, and other various tasks.",
     gallery: [
       "assets/image001 (1).png"
     ]
